@@ -3,7 +3,7 @@ import DKModel from './utils'
 import { Line } from '@ant-design/plots';
 import { Card, Tabs } from 'antd'
 import { _2022 } from 'data/DK/etf/60/chuangye'
-import { DkCategory } from '../../../data/uilts/index'
+import { DkCategory,allData } from '../../../data/uilts/index'
 export default function Navigation() {
   const dKModel = new DKModel(_2022)
   const [data,setData] = useState([])
@@ -12,6 +12,9 @@ export default function Navigation() {
     console.log( dKModel.getRateHistory())
     setData([...dKModel.getRateHistory()])
   }, [])
+  useEffect(()=>{
+    console.log(allData())
+  },[])
   const config = {
     data,
     padding: 'auto',

@@ -1,3 +1,4 @@
+import dk60 from '../DK/etf/60'
 export const  DkCategory = [
   {
     name:'all',
@@ -60,3 +61,13 @@ export const  DkCategory = [
     label:'中药',
   },
 ]
+
+
+
+const getAllData = () => {
+
+}
+
+export const allData = () => {
+  console.log(dk60)
+}

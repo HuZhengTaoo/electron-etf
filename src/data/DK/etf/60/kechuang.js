@@ -1,0 +1,94 @@
+const _2022 = [
+  {
+    start:1336,
+    end:1308,
+  },
+  {
+    start:1202,
+    end:1173,
+  },
+  {
+    start:1221,
+    end:1204,
+  },
+  {
+    start:1152,
+    end:1123,
+  },
+  {
+    start:1003,
+    end:973,
+  },
+  {
+    start:941,
+    end:995,
+  },
+  {
+    start:1026,
+    end:1040,
+  },
+  {
+    start:1092,
+    end:1063,
+  },
+  {
+    start:1102,
+    end:1078,
+  },
+  {
+    start:1110,
+    end:1088,
+  },
+  {
+    start:1080,
+    end:1072,
+  },
+  {
+    start:1094,
+    end:1125,
+  },
+  {
+    start:1059,
+    end:1029,
+  },
+  {
+    start:940,
+    end:1015,
+  },
+  {
+    start:1052,
+    end:1016,
+  },
+  {
+    start:1014,
+    end:1007,
+  },
+
+
+]
+
+const _2023 = [
+  {
+    start:961,
+    end:1018,
+  },
+  {
+    start:996,
+    end:990,
+  },
+  {
+    start:1001,
+    end:993,
+  },
+  {
+    start:1019,
+    end:1116,
+  },
+]
+
+export default {
+  'kechuang': {
+    _2022,
+    _2023
+  }
+}

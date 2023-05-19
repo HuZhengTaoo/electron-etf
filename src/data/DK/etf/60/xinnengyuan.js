@@ -1,0 +1,85 @@
+const _2022 = [
+  {
+    start:4031,
+    end:3942,
+  },
+  {
+    start:4051,
+    end:3939,
+  },
+  {
+    start:4039,
+    end:3935,
+  },
+  {
+    start:3791,
+    end:3818,
+  },
+  {
+    start:3792,
+    end:3691,
+  },
+  {
+    start:3080,
+    end:4144,
+  },
+  {
+    start:4269,
+    end:4115,
+  },
+  {
+    start:4069,
+    end:4115,
+  },
+  {
+    start:4094,
+    end:4006,
+  },
+  {
+    start:4020,
+    end:3905,
+  },
+  {
+    start:3970,
+    end:3905,
+  },
+  {
+    start:3979,
+    end:3968,
+  },
+  {
+    start:3757,
+    end:3968,
+  },
+  {
+    start:3757,
+    end:3612,
+  },
+  {
+    start:3490,
+    end:3365,
+  },
+  {
+    start:3377,
+    end:3275,
+  },
+  {
+    start:3292,
+    end:3287,
+  },
+  {
+    start:3201,
+    end:3120,
+  },
+  {
+    start:3050,
+    end:2982,
+  },
+
+]
+
+export default {
+  'xinnengyuan' : {
+    _2022
+  }
+}

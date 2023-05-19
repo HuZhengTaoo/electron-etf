@@ -1,0 +1,73 @@
+const _2022 = [
+  {
+    start:1988,
+    end:1957,
+  },
+  {
+    start:2010,
+    end:1968,
+  },
+  {
+    start:2011,
+    end:2192,
+  },
+  {
+    start:2185,
+    end:2385,
+  },
+  {
+    start:2271,
+    end:2155,
+  },
+  {
+    start:2249,
+    end:2257,
+  },
+  {
+    start:2491,
+    end:2484,
+  },
+  {
+    start:2417,
+    end:2362,
+  },
+  {
+    start:2390,
+    end:2331,
+  },
+  {
+    start:2412,
+    end:2549,
+  },
+  {
+    start:2706,
+    end:2640,
+  },
+  {
+    start:2670,
+    end:2606,
+  },
+  {
+    start:2666,
+    end:2561,
+  },
+  {
+    start:2622,
+    end:2515,
+  },
+  {
+    start:2340,
+    end:2324,
+  },
+  {
+    start:2332,
+    end:2360,
+  },
+
+]
+
+export default {
+  'meitan' : {
+    _2022
+  }
+}

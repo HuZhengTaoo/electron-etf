@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import DKModel from './utils'
 import { Line } from '@ant-design/plots';
-import { Card } from 'antd'
+import { Card, Tabs } from 'antd'
 import { _2022 } from 'data/DK/etf/60/chuangye'
+import { DkCategory } from '../../../data/uilts/index'
 export default function Navigation() {
   const dKModel = new DKModel(_2022)
   const [data,setData] = useState([])
@@ -21,11 +22,23 @@ export default function Navigation() {
       // type: 'timeCat',
       tickCount: 5,
     },
-  };
+  }
   return (
-    <>
+    <div>
+      <Tabs
+        defaultActiveKey="1"
+        style={{ height: 220 }}
+        items={DkCategory.map((item,index) => {
+          return {
+            label:item.label,
+            key:index,
+          };
+        })}
+        onChange={(key) => {
+          console.log(key);
+        }}
+      />
       <Line style={{width:300,height:300}} {...config} />
-      <Card></Card>
-    </>
+    </div>
   )
 }

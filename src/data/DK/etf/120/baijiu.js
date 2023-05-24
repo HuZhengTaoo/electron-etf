@@ -7,10 +7,10 @@ const _2022 = [
     start:16397,
     end:15775,
   },
-  // {
-  //   start:14606,
-  //   end:13575,
-  // },
+  {
+    start:14606,
+    end:13575,
+  },
   {
     start:14582,
     end:13806,
@@ -39,25 +39,28 @@ const _2022 = [
     start:15137,
     end:14964,
   },
-  // {
-  //   start:13310,
-  //   end:13091,
-  // },
-  // {
-  //   start:13596,
-  //   end:16761,
-  // },
+  {
+    start:13310,
+    end:13091,
+  },
+  {
+    start:13596,
+    end:15609,
+  },
 ]
 
 const _2023 = [
   {
-    start:16609,
-    end:16483,
+    start:8606,
+    end:9263,
+  },
+  {
+    start:9114,
+    end:8960,
   },
 
 ]
 
-module.exports = _2023
 
 export default {
   'baijiu': {

@@ -3,7 +3,7 @@ class DKModel {
   constructor(rawData) {
     this.rawData = rawData
     this.rateHistory = []
-
+    this.calRate = 1
   }
   calDistanceRate () {
     let rate = 1
@@ -28,6 +28,7 @@ class DKModel {
         })
       }
     })
+    this.calRate = rate
   }
   tradeCount () {
     return this.rateHistory.length
@@ -40,6 +41,9 @@ class DKModel {
   }
   getRateHistory(){
     return this.rateHistory
+  }
+  getFinalRate(){
+    return (this.calRate*100).toFixed(2) + '%'
   }
 }
 

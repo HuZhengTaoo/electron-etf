@@ -8,6 +8,7 @@ const Navigation = () => {
   const navigate = useNavigate();
   const menuItems = [
     { title: 'DK', icon: 'home', link: '/dk' },
+    { title: 'FearIndex', icon: 'home', link: '/fearIndex' },
   ];
   useEffect(()=>{
     new Strage().testcountWorkingDays()

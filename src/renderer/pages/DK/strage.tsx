@@ -50,14 +50,15 @@ export default class Strage extends DKModel {
     return targetDate.isBetween(startDate, endDate,undefined, '[]');
   }
   countWorkingDays(startDate, endDate) {
-    let curDate = startDate;
+    let curDate = new Date(startDate);
     let count = 0;
-    while (curDate <= endDate) {
+    while (curDate <= new Date(endDate)) {
       let dayOfWeek = curDate.getDay();
       if (!(dayOfWeek == 6 || dayOfWeek == 0))
         count++;
       curDate.setDate(curDate.getDate() + 1);
     }
+    console.log('工作日：',count)
     return count;
   }
 }

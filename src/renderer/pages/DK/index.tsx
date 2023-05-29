@@ -7,7 +7,7 @@ import baijiu from '../../../data/DK/etf/120/baijiu'
 import { DkCategory,allData } from '../../../data/uilts/index'
 export default function Navigation() {
   console.log(baijiu.baijiu)
-  const dKModel = new DKModel(baijiu.baijiu._2022)
+  const dKModel = new DKModel(baijiu.baijiu._2020)
   const [data,setData] = useState([])
   const [info,setInfo] = useState({})
   useEffect(() => {

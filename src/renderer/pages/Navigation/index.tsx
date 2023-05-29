@@ -10,7 +10,7 @@ const Navigation = () => {
     { title: 'DK', icon: 'home', link: '/dk' },
   ];
   useEffect(()=>{
-    new Strage().testRange()
+    new Strage().testcountWorkingDays()
   },[])
   return (
     <div style={{ padding: '24px' }}>

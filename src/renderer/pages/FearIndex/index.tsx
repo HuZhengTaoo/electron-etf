@@ -1,9 +1,13 @@
 import React from 'react'
 import CNIndex from './components/cn'
+import Calculator from './components/cal'
 
 const FearIndex = () => {
   return (
-    <CNIndex></CNIndex>
+    <>
+      {/* <CNIndex></CNIndex> */}
+      <Calculator></Calculator>
+    </>
   )
 }
 

@@ -1,0 +1,23 @@
+.list {
+  /* display: flex; */
+}
+.list_item{
+  margin-right: 20px;
+}
+.red{
+  color:#ffaa00;
+}
+.table_200{
+  display: flex;
+}
+.table_item{
+  padding-right: 50px;
+  margin-right: 50px;
+  border-right: 1px solid #ccc;
+}
+.progress-wrap{
+  display: flex;
+}
+.p-item{
+  margin-right: 50px;
+}

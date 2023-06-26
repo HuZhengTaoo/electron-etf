@@ -1,0 +1,40 @@
+export default {
+  'invest': [
+    {
+      'total':97000,
+      'platform':'futu',
+    },
+    {
+      'total':75000,
+      'platform':'dongfang',
+    },
+    {
+      'total':42000,
+      platform:'huabao',
+    },
+
+  ],
+  'regular':[
+    {
+      'total':26400,
+      'platform':'gjj',
+    }
+  ],
+  'wages':16000,
+  'reward':[
+    {
+      total:100000,
+      platform:'mm',
+    },
+    {
+      total:22000*1.2,
+      platform:'year'
+    }
+  ],
+  'debt':[
+    {
+      'total':220000,
+      'platform':'baby',
+    }
+  ]
+}

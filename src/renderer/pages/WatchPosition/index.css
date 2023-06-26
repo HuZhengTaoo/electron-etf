@@ -1,0 +1,17 @@
+.xy-table {
+  overflow: hidden;
+  overflow-y: auto;
+   /* 高度需要计算出符合自己需求 */
+  height: auto;
+
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.red{
+  color:red;
+}

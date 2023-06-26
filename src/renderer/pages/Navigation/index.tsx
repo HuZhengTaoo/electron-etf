@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import './index.css'
 import Strage from '../DK/strage'
 
+
 const Navigation = () => {
   const navigate = useNavigate();
   const menuItems = [
@@ -11,6 +12,9 @@ const Navigation = () => {
     { title: 'DK2', icon: 'home', link: '/dk2' },
     { title: 'FearIndex', icon: 'home', link: '/fearIndex' },
     { title: 'Position', icon: 'home', link: '/position' },
+    { title: '200', icon: 'home', link: '/200' },
+    { title: 'Watch_Position' , icon:'home', link:'/watch_position'},
+    { title: 'BuyFrom55', icon: 'home', link: '/buy_from_55' },
   ];
   useEffect(()=>{
     new Strage().testcountWorkingDays()

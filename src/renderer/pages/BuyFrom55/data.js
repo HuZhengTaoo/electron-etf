@@ -1,0 +1,20 @@
+export default [
+  {
+    name:'haha',
+    platform:'xx',
+    buy_list:[
+      {
+        time:'2022-11-5',
+        point:1000,
+        drop_level:'0.55',
+        has_sell:false,
+        buy_percent:18000,
+        buy_price:1.05,
+        fund_name:'xx',
+        fund_code:'xx',
+        buy_money:1000,
+        earn_money:1000,
+      }
+    ]
+  }
+]

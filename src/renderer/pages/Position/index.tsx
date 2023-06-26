@@ -26,9 +26,10 @@ const Position = () => {
    const per = 5
    const getDropList = (high,low)=>{
      const dropDeep = low/high * 100
-     const buyPer = parseInt(dropDeep/per)
+     const buyPer = parseInt((0.55- low/high)/0.05)
      const arr = []
-     for(let i=0;i<buyPer;i++){
+     console.log(buyPer)
+     for(let i=0;i<buyPer+1;i++){
        arr.push({
         dropDeep:`${55-i*per}%`,
         dropPoint:parseInt(high*(55-i*per)/100)

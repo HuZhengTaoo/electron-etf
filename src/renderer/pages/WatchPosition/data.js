@@ -1,5 +1,41 @@
 export default [
   {
+    name:'恒生指数',
+    high_time:'2018-2',
+    high_point:33484,
+    cur_point:18790
+  },
+  {
+    name:'科创50',
+    high_time:'2020-8',
+    high_point:1726,
+    cur_point:1000
+  },
+  {
+    name:'消费',
+    high_time:'2021-3',
+    high_point:32504,
+    cur_point:19000
+  },
+  {
+    name:'国证芯片',
+    high_time:'2021-8',
+    high_point:13690,
+    cur_point:7662
+  },
+  {
+    name:'中证酒',
+    high_time:'2021-7',
+    high_point:11730,
+    cur_point:7711
+  },
+  {
+    name:'科创芯片',
+    high_time:'2021-8',
+    high_point:2110,
+    cur_point:1380
+  },
+  {
     name:'房产',
     high_time:'2022-5',
     high_point:5729,
@@ -27,19 +63,14 @@ export default [
     name:'房产',
     high_time:'2022-5',
     high_point:5729,
-    cur_point:3561
+    cur_point:3460
   },
-  {
-    name:'化工龙头',
-    high_time:'2021-10',
-    high_point:1.35,
-    cur_point:0.725
-  },
+
   {
     name:'保险',
-    high_time:'2021-8',
-    high_point:1837,
-    cur_point:1042
+    high_time:'2020-12',
+    high_point:2680,
+    cur_point:1764
   },
   {
     name:'科创材料',
@@ -57,13 +88,13 @@ export default [
     name:'消费电子',
     high_time:'2020-8',
     high_point:8056,
-    cur_point:4567
+    cur_point:4437
   },
   {
     name:'证券公司',
     high_time:'2020-8',
     high_point:1054,
-    cur_point:641
+    cur_point:628
   },
   {
     name:'化工能源',
@@ -75,7 +106,7 @@ export default [
     name:'创业',
     high_time:'2021-8',
     high_point:3576,
-    cur_point:2211
+    cur_point:2173
   },
   {
     name:'新能源车',
@@ -87,7 +118,7 @@ export default [
     name:'农业',
     high_time:'2021-3',
     high_point:9242,
-    cur_point:5339
+    cur_point:5341
   },
   {
     name:'光伏',

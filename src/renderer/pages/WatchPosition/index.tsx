@@ -69,6 +69,10 @@ const Position = () => {
       title:'buy_distance_rate',
       dataIndex:'buy_distance_rate',
       key:'buy_distance_rate',
+      sorter: {
+        compare: (a, b) =>  Number(String(a.buy_distance_rate).replace('%',''))- Number(String(b.buy_distance_rate).replace('%',''))  ,
+        multiple: 2,
+      },
       render:(buy_distance_rate)=>(
         <p style={{color:'green'}}>-{buy_distance_rate || '-'}</p>
       )

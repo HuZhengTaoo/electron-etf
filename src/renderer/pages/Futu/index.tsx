@@ -1,5 +1,5 @@
 import React from 'react'
-import { all,str } from '../../../static_data/futu/2023_11_24'
+import { all,str } from '../../../static_data/futu/2023_12_6'
 import { hold } from '../../../static_data/futu/hold'
 import { jsonfyStr,newData,hold_data } from './utils'
 

@@ -15,8 +15,11 @@ const Navigation = () => {
     { title: '200', icon: 'home', link: '/200' },
     { title: 'Watch_Position' , icon:'home', link:'/watch_position'},
     { title: 'BuyFrom55', icon: 'home', link: '/buy_from_55' },
+    { title: 'Change', icon: 'home', link: '/change' },
     { title: 'Total', icon: 'home', link: '/total' },
-    { title: 'Futu', icon:'home', link:'/futu'}
+    { title: 'Futu', icon:'home', link:'/futu'},
+    { title:'calculate', icon:'home', link:'/calculate'},
+    { title:'excel', icon:'home', link:'/excel'}
   ];
   useEffect(()=>{
     new Strage().testcountWorkingDays()

@@ -14,7 +14,7 @@ import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
-
+const XLSX = require('xlsx');
 class AppUpdater {
   constructor() {
     log.transports.file.level = 'info';
@@ -75,14 +75,25 @@ const createWindow = async () => {
     height: 728,
     icon: getAssetPath('icon.png'),
     webPreferences: {
-      nodeIntegration: true,
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
         : path.join(__dirname, '../../.erb/dll/preload.js'),
+        contextIsolation: true, // Must be true to use contextBridge
+        nodeIntegration: false, // Recommended for security
     },
   });
 
   mainWindow.loadURL(resolveHtmlPath('index.html'));
+
+  const filePath = path.join(__dirname, "hongli.xlsx");
+  console.log("Excel Path:", filePath); // 输出 Excel 文件路径
+  // 读取文件内容
+  const workbook = XLSX.readFile(filePath);
+  const sheetName = workbook.SheetNames[0];
+  const worksheet = workbook.Sheets[sheetName];
+  const jsonData = XLSX.utils.sheet_to_json(worksheet);
+  console.log(jsonData)
+
 
   mainWindow.on('ready-to-show', () => {
     if (!mainWindow) {
@@ -92,8 +103,11 @@ const createWindow = async () => {
       mainWindow.minimize();
     } else {
       mainWindow.show();
+      mainWindow.webContents.send('message-from-main', 'Hello from the main process!');
+      // mainWindow.webContents.send('message-from-main', { data:jsonData });
     }
   });
+
 
   mainWindow.on('closed', () => {
     mainWindow = null;

@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import { rawdata } from './515080'
+import { rawdata } from './tqqq'
 import './index.css'
 import moment from 'moment';
 
@@ -23,6 +23,7 @@ const Excel = () => {
       }
       const year = moment(item['日期']).format('YYYY')
       const yM = moment(item['日期']).format('YYYY-MM')
+
       if(!yearList.includes(year)){
         yearList.push(year)
         yearDetail[year]={first:rawdata[index > 0 ? index -1 : index]['复权净值']}

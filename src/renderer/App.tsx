@@ -12,6 +12,7 @@ import Total from './pages/Total'
 import Futu from './pages/Futu'
 import Calculate from './pages/Calculate';
 import Excel from './pages/Excel';
+import USMonthly from './pages/USMonthly';
 
 import './App.css';
 import { Button } from 'antd';
@@ -34,6 +35,7 @@ export default function App() {
         <Route path='/futu' element={<Futu></Futu>}/>
         <Route path='/calculate' element={<Calculate></Calculate>}/>
         <Route path='excel' element={<Excel></Excel>}/>
+        <Route path='/us_monthly' element={<USMonthly></USMonthly>}/>
       </Routes>
     </Router>
   );

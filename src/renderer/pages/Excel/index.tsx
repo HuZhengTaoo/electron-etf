@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import { rawdata } from './300'
+import { rawdata } from './515080'
 import './index.css'
 import moment from 'moment';
 
@@ -18,6 +18,9 @@ const Excel = () => {
     const yearFinal = {}
     let calList = []
     rawdata.forEach((item,index)=>{
+      if(typeof item['日期'] === 'number'){
+        item['日期'] = moment(item['日期']*1000).format('YYYY-MM-DD')
+      }
       const year = moment(item['日期']).format('YYYY')
       const yM = moment(item['日期']).format('YYYY-MM')
       if(!yearList.includes(year)){

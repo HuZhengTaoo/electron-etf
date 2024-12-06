@@ -19,7 +19,8 @@ const Navigation = () => {
     { title: 'Total', icon: 'home', link: '/total' },
     { title: 'Futu', icon:'home', link:'/futu'},
     { title:'calculate', icon:'home', link:'/calculate'},
-    { title:'excel', icon:'home', link:'/excel'}
+    { title:'excel', icon:'home', link:'/excel'},
+    { title:'us_monthly', icon:'home', link:'/us_monthly'},
   ];
   useEffect(()=>{
     new Strage().testcountWorkingDays()

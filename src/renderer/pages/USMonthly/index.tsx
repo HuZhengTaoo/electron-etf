@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import { rawdata } from './tqqq-w'
+import { rawdata } from './sso-m'
 import moment from 'moment';
 
 
@@ -21,7 +21,7 @@ export default function index() {
   // nvda = 0.05
   // tsla = 0.0618
 
-  const mostLostRate = 0.084
+  const mostLostRate = 0.055
   const mostLost = 1-mostLostRate
   const [everyYearData,setEveryYearData] = useState([])
   const [trueTotalData,setTrueTotalData] = useState(1)
